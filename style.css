@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#game-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative; 
+}
+
+#scene-bg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#dialoge-box {
+    position: absolute;
+    top: 3vh;        
+    left:3vw;          
+    width: 40vw;        
+    height: 16vh;       
+    
+    background-color: rgba(0, 0, 0, 0.75); /* Dark black tint with 75% opacity */
+    border: 2px solid #e3bc7c;             /* Elegant Genshin-gold border */
+    border-radius: 10px;                   /* Rounds the sharp corners */
+    padding: 10px;                         /* Creates breathing room for text inside */
+    color: white;                          /* Forces the text color to be readable */
+}
+
+#dialoge-box h2 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+button {
+    position: absolute;
+    bottom: 2vh;
+    right: 2vw;
+    
+    background-color: #e3bc7c; /* Genshin Gold color */
+    color: black;
+    border: none;
+    padding: 8px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+@keyframes letterDropFlow {
+    0% {
+        /* Start: High off-screen, shifted far to the right side */
+        transform: translate(40vw, -50vh);
+        opacity: 0;
+    }
+    15% {
+        /* Step 1: Lands on the text line on the right side, fades in */
+        transform: translate(40vw, 0);
+        opacity: 1;
+    }
+    75% {
+        /* Step 2: Streams horizontally across the line to the left side */
+        transform: translate(0vw, 0);
+        opacity: 1;
+    }
+    100% {
+        /* Step 3: Plummets down from the left side and disappears */
+        transform: translate(0vw, 20vh);
+        opacity: 0;
+    }
+}
+
+.animated-letter {
+    display: inline-block;
+    position: absolute; /* Allows letters to float and cross paths */
+    font-weight: bold;
+    font-size: 1.3rem;
+    
+    /* Attach our timeline: lasts 4 seconds, runs once, stays smooth */
+    animation: letterDropFlow 3s linear forwards;
+    
+    /* Start them invisible so they don't flash on screen early */
+    opacity: 0;
+}
