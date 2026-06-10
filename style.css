@@ -7,7 +7,7 @@ body {
 
 #game-container {
     width: 100vw;
-    height: 100vh;
+    height: 100dvh;
     position: relative; 
 }
 
@@ -38,8 +38,8 @@ body {
 
 button {
     position: absolute;
-    bottom: 2vh;
-    right: 2vw;
+    bottom: 20px;
+    right: 20px;
     
     background-color: #e3bc7c; /* Genshin Gold color */
     color: black;
@@ -48,6 +48,7 @@ button {
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    z-index: 10;
 }
 
 @keyframes letterDropFlow {
