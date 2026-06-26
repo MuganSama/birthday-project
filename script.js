@@ -99,13 +99,13 @@ const scenes = [
         name: "#12 Beautiful",
         image: "assets/pictures/navia.png",
         audio: "assets/voices/navia_voice.mp3",
-        text: "Happy Birthday! A beautiful milestone like this deserves a grand celebration! Let's toast with some tea and macarons, partner!"
+        text: "Happy Birthday! Uk beautiful milestone like this deserves a grand celebration! There is a truly genuine beauty in how brightly u shine. Let's toast with some tea and macarons, u deserve the most wanderful day partner!"
     },
     {
         name: "#13 The best Sibling",
         image: "assets/pictures/siblings.png",
-        audio: "assets/voices/siblings_voice.mp3",
-        text: "And finally... happy birthday from the best sibling you could ask for. Teyvat is massive, but I'm just glad we found each other in it. Thank you for always being there"
+        audio: "assets/voices/sibling.mp3",
+        text: "And lastly Teyvat is big but i am glad to find you, the best sibling that i can ever ask for"
     }
 ];
 
